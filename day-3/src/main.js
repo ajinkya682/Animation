@@ -4,14 +4,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".box", {
-  x: 1000,
-  ease: "expo.inOut",
+const tl = gsap.timeline();
+
+tl.to("img", {
+  scale: 2.8,
   scrollTrigger: {
     trigger: ".page2",
     start: "top top",
-    end: "top -100%",
-    scrub: true,
+    end: "bottom bottom",
+    scrub: 1,
     pin: true,
-  },
+  }.to(
+    "h1",
+    {
+      scale: 2.8,
+    },
+    "<",
+  ),
 });
