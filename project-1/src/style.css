@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.subheading {
+  width: 40%;
+  text-align: justify;
+}
+
+.loading {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f1510;
+}
+
+button {
+  padding: 1rem 2.75rem;
+
+  background: #ffffff;
+  color: #1f3a24;
+
+  border: none;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #eef6ea;
+}
